@@ -45,6 +45,18 @@ a{
     text-decoration: none;
 }
 
+.mb-1{
+    margin-bottom: 1em;
+}
+
+.mt-1{
+    margin-top: 1em;
+}
+
+.pt-1{
+    padding-top: 1em;
+}
+
 .mb-2{
     margin-bottom: 2em;
 }
@@ -53,12 +65,20 @@ a{
     margin-top: 2em;
 }
 
+.mt-4{
+    margin-top: 4em;
+}
+
 .pt-3{
     padding-top: 3em;
 }
 
 .pb-3{
     padding-bottom: 3em;
+}
+
+.pb-4{
+    padding-bottom: 4em;
 }
 
 .mb-4{
@@ -204,6 +224,36 @@ header .btn{
     height: 200px;
 }
 
+/* Why-us */
+#why-us{
+    /* DEBUG */
+    width: 100%;
+}
+
+#why-us h1{
+    color: var(--white-text);
+    text-align: center;
+}
+
+#why-us .card{
+    background-color: var(--white-text);
+    color: var(--violet-section);
+    padding: 1em;
+
+    /* DEBUG */
+    width: 100%;
+}
+
+#why-us p{
+    color: #000000;
+}
+
+#why-us span{
+    color: var(--white-text);
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 40px;
+}
 
 
 
@@ -237,6 +287,23 @@ header .btn{
     #testimonials .text-card{
         width: 50%;
     }
+
+    /* Why-us */
+    #why-us .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    #why-us .card{
+        width: calc(100% / 2 - 1.5em);
+        margin: 0;
+    }
+
+    #why-us h1:first-child{
+        width: 100%;
+    }
     
 
 }
@@ -247,7 +314,7 @@ header .btn{
     .container{
         width: 70%;
     }
-    
+
     /* HEADER */
     header ul{
         display: flex;
@@ -279,6 +346,23 @@ header .btn{
 
     #planning .card{
         width: 50%;
+    }
+
+    /* Why-us */
+    #why-us .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1.5em;
+    }
+
+    #why-us .card{
+        width: calc(100% / 3 - 1em);
+        margin: 0;
+    }
+
+    #why-us h1:first-child{
+        width: 100%;
     }
 
 }
