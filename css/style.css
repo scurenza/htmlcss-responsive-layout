@@ -178,12 +178,30 @@ header .btn{
 
 .violet{
     background-color: var(--violet-section);
+}
+
+#planning .btn{
     text-align: center;
     display: inline-block;
     position: absolute;
     bottom: 1%;
     left: 50%;
     transform: translate(-50% , -50%);
+}
+
+/* Testimonials */
+
+.text{
+    text-align: center;
+}
+
+#testimonials .card{
+    padding: 1em;
+}
+
+#testimonials .image-card,
+#testimonials .text-card{
+    height: 200px;
 }
 
 
@@ -210,10 +228,26 @@ header .btn{
         width: calc(100% / 3 * 2 - .5em);
     }
 
+    /* Third Section */
+    #testimonials .card{
+        display: flex;
+    }
+
+    #testimonials .image-card,
+    #testimonials .text-card{
+        width: 50%;
+    }
+    
+
 }
 
 /* Desktop*/
 @media screen and (min-width: 992px) {
+    /* COMMON */
+    .container{
+        width: 70%;
+    }
+    
     /* HEADER */
     header ul{
         display: flex;
@@ -246,6 +280,7 @@ header .btn{
     #planning .card{
         width: 50%;
     }
+
 }
 
 /* Large Desktop */
