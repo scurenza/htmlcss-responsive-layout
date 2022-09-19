@@ -279,6 +279,34 @@ header .btn{
     min-height: 300px;
 }
 
+/* Cta */
+#cta{
+    background-color: var(--violet-section);
+    width: 100%;
+    text-align: center;
+    color: var(--white-text);
+}
+
+#cta h1{
+    color: #fdc15f;
+}
+
+#cta .btn{
+    color: var(--violet-section);
+    background-color: var(--white-text);
+    padding: .8em 3em;
+}
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+    width: 100%;
+    color: var(--white-text);
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 
 
 
