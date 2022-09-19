@@ -23,6 +23,7 @@ html{
     --white-text: #ffffff;
     --black-text: #000000;
     --card-bg-blue: #b5ddff;
+    --violet-section: #9792e4;
 
     /* Sizes */
     --header-text: 1.5rem;
@@ -48,12 +49,16 @@ a{
     margin-bottom: 2em;
 }
 
-.mt-4{
-    margin-top: 4em;
+.mt-2{
+    margin-top: 2em;
 }
 
 .pt-3{
     padding-top: 3em;
+}
+
+.pb-3{
+    padding-bottom: 3em;
 }
 
 .mb-4{
@@ -148,6 +153,44 @@ header .btn{
     background-color: var(--header-bg);
 }
 
+/* Planning */
+#planning{
+    background-color: var(--violet-section);
+    /* DEBUG */
+    max-height: 1200px;
+}
+
+#planning .container{
+    /* DEBUG */
+    min-height: 100%;
+}
+
+#planning .card {
+    /* DEBUG */
+    height: 500px;
+}
+
+#planning .card:last-child {
+    background-color: var(--white-text);
+    padding: 2em;
+    position: relative;
+}
+
+.violet{
+    background-color: var(--violet-section);
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+
+
+
+
 /* MEDIA QUERIES */
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -176,7 +219,7 @@ header .btn{
         display: flex;
     }
 
-    .container i{
+    header .container i{
         display: none;
     }
 
@@ -193,6 +236,15 @@ header .btn{
 
     .big .image-card{
         height: 100%;
+    }
+
+    /* Second Section */
+    #planning .container{
+        display: flex;
+    }
+
+    #planning .card{
+        width: 50%;
     }
 }
 
