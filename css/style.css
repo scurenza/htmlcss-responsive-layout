@@ -9,3 +9,100 @@
 img{
     max-width: 100%;
 }
+
+html{
+    font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* ROOT */
+
+:root{
+    --header-bg: #0084fd;
+    --white-text: #ffffff;
+    --black-text: #000000;
+    --card-bg-blue: #b5ddff;
+}
+
+/* COMMON */
+
+.container{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.mr-2{
+    margin-right: 2em;
+}
+
+.btn{
+    padding: .5rem .8rem;
+    border-radius: 15px;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+
+    background-color: var(--header-bg);
+    color: var(--white-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header i{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+header .container{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: none;
+    align-items: center;
+}
+
+header .btn{
+    color: var(--black-text);
+    background-color: var(--white-text);
+}
+
+/* MEDIA QUERIES */
+/* Tablet */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktop*/
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    header ul{
+        display: flex;
+    }
+
+    .container i{
+        display: none;
+    }
+}
+
+/* Large Desktop */
+@media screen and (max-width: 1200px) {
+    
+}
