@@ -210,7 +210,7 @@ header .btn{
 }
 
 #demo .image-card img{
-    width: 50%;
+    width: 40%;
     object-fit: cover;
     object-position:bottom;
 }
@@ -223,8 +223,6 @@ header .btn{
 /* Planning */
 #planning{
     background-color: var(--violet-section);
-    /* DEBUG */
-    max-height: 1200px;
 }
 
 #planning .container{
@@ -234,13 +232,26 @@ header .btn{
 
 #planning .card {
     /* DEBUG */
-    height: 500px;
+    /* min-height: 500px; */
 }
 
 #planning .card:last-child {
     background-color: var(--white-text);
     padding: 2em;
     position: relative;
+}
+
+#planning .image-card{
+    width: 100%;
+}
+
+#planning .image-card img{
+    width: 70%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .violet{
@@ -255,6 +266,23 @@ header .btn{
     left: 50%;
     transform: translate(-50% , -50%);
 }
+
+#planning .text-card{
+    color: var(--white-text);
+}
+
+#planning h2{
+    font-size: 2rem;
+}
+
+#planning .black{
+    color: var(--black-text);
+}
+
+#planning h3{
+    font-size: 1.5rem;
+}
+
 
 /* Testimonials */
 
@@ -468,6 +496,14 @@ footer{
 
     #planning .card{
         width: 50%;
+    }
+
+    #planning .card:first-child{
+        margin-right: 2em;
+    }
+
+    #planning .card:last-child{
+        margin-top: 10em;
     }
 
     /* Why-us */
